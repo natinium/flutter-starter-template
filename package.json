@@ -1,0 +1,22 @@
+{
+  "name": "flutter_starter_template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Natnael Mesele <nmesele5@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "husky": "^9.1.7"
+  },
+
+  "lint-staged": {
+    "*.dart": [
+      "dart format",
+      "flutter analyze"
+    ]
+  }
+}
